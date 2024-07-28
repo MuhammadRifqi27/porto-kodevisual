@@ -35,7 +35,31 @@ section {
     height: 18rem;
 }
 
+
 /* Card Layanan */
+.custom-cardd {
+  background: linear-gradient(135deg, #f3e5f5 30%, #e1bee7 90%);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  color: #4a148c;
+  height: auto; /* Ensures the card adjusts its height based on content */
+  min-height: 620px;
+  
+}
+/* For screens larger than 576px */
+@media (min-width: 400px) { 
+  .custom-cardd{
+    min-height: 820px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 400px) {
+  .custom-cardd {
+    min-height: 850px; /* Adjust this value as needed */
+  }
+}
 .custom-card {
   background: linear-gradient(135deg, #f3e5f5 30%, #e1bee7 90%);
   border: none;
@@ -45,6 +69,19 @@ section {
   height: auto; /* Ensures the card adjusts its height based on content */
   min-height: 620px;
   
+}
+/* For screens larger than 576px */
+@media (min-width: 400px) { 
+  .custom-card{
+    min-height: 930px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 400px) {
+  .custom-card {
+    min-height: 1020px; /* Adjust this value as needed */
+  }
 }
 
 .custom-card-title {
