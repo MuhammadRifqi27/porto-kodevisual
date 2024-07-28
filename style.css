@@ -48,16 +48,51 @@ section {
   
 }
 /* For screens larger than 576px */
-@media (min-width: 400px) { 
+/* hp */
+@media (min-width: 350px) {
   .custom-cardd{
-    min-height: 820px;
+    min-height: 850px;
+  }
+}
+@media (min-width: 400px) {
+  .custom-cardd{
+    min-height: 830px;
+  }
+}
+@media (min-width: 420px) {
+  .custom-cardd{
+    min-height: 780px;
+  }
+}
+@media (min-width: 500px) {
+  .custom-cardd{
+    min-height: 700px;
+  }
+}
+@media (min-width: 550px) {
+  .custom-cardd{
+    min-height: 630px;
+  }
+}
+@media (min-width: 576px) {
+  .custom-cardd{
+    min-height: 650px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-cardd{
+    min-height: 850px;
+  }
+}
+@media (min-width: 992px) {
+  .custom-cardd{
+    min-height: 730px;
   }
 }
 
-/* For screens smaller than 576px */
-@media (max-width: 400px) {
-  .custom-cardd {
-    min-height: 850px; /* Adjust this value as needed */
+@media (min-width: 1200px) {
+  .custom-cardd{
+    min-height: 630px;
   }
 }
 .custom-card {
@@ -71,19 +106,57 @@ section {
   
 }
 /* For screens larger than 576px */
-@media (min-width: 400px) { 
+@media (min-width: 350px) {
   .custom-card{
-    min-height: 930px;
+    min-height: 1020px;
+  }
+}
+@media (min-width: 400px) {
+  .custom-card{
+    min-height: 950px;
+  }
+}
+@media (min-width: 420px) {
+  .custom-card{
+    min-height: 880px;
+  }
+}
+@media (min-width: 450px) {
+  .custom-card{
+    min-height: 750px;
+  }
+}
+@media (min-width: 500px) {
+  .custom-card{
+    min-height: 750px;
+  }
+}
+@media (min-width: 576px) {
+  .custom-card{
+    min-height: 760px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-card{
+    min-height: 1050px;
+  }
+}
+@media (min-width: 992px) {
+  .custom-card{
+    min-height: 750px;
   }
 }
 
-/* For screens smaller than 576px */
-@media (max-width: 400px) {
-  .custom-card {
-    min-height: 1020px; /* Adjust this value as needed */
+@media (min-width: 1200px) {
+  .custom-card{
+    min-height: 750px;
   }
 }
-
+@media (min-width: 1400px) {
+  .custom-card{
+    min-height: 650px;
+  }
+}
 .custom-card-title {
   font-family: 'Arial', sans-serif;
   font-weight: bold;
