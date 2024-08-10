@@ -17,15 +17,24 @@ section {
     margin-top: 1rem;
     color: white;
 }
+#tentang {
+  background-color: #020927;
+  color: white;
+}
 
 #layanan i {
   font-size: 5rem;
 }
 
-
-#portofolio {
-    background-color: #2E236C;
+#layanan {
+  background-color: #020927;
 }
+.row-card {
+  margin-bottom: 20rem;
+}
+
+
+
 .card-img-top {
     width: 100%;
     height: 15vw;
@@ -38,11 +47,11 @@ section {
 
 /* Card Layanan */
 .custom-cardd {
-  background: linear-gradient(135deg, #f3e5f5 30%, #e1bee7 90%);
+  background-color: #7c8bce;
   border: none;
   border-radius: 15px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  color: #4a148c;
+  color: #020927;
   height: auto; /* Ensures the card adjusts its height based on content */
   min-height: 620px;
   
@@ -96,11 +105,11 @@ section {
   }
 }
 .custom-card {
-  background: linear-gradient(135deg, #f3e5f5 30%, #e1bee7 90%);
+  background-color: #7c8bce;
   border: none;
   border-radius: 15px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  color: #4a148c;
+  color: #020927;
   height: auto; /* Ensures the card adjusts its height based on content */
   min-height: 620px;
   
@@ -171,7 +180,7 @@ section {
 }
 
 .custom-list-item .fw-bold {
-  color: #6a1b9a;
+  color: #020927;
 }
 
 .custom-badge {
@@ -186,16 +195,17 @@ section {
 }
 
 #Hubungi {
-  background-color: #2E236C;
+  color: white;
 }
 /* form */
 .contact-form {
-    background: #ffffff;
+  background-color: #020927;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 50px auto;
+    margin-bottom: 8rem;
   }
   .contact-form h2 {
     margin-bottom: 20px;
@@ -219,31 +229,31 @@ section {
     font-size: 16px;
   }
   .btn-primary:hover {
-    background-color: #2E236C;
-    border-color: #2E236C;
+    background-color: #0d28a0;
+    border-color: #020927;
   }
 
   /* footer */
   .footer {
-    background-color: #ffff;
+    background-color: #020927;
     color: black;
     padding: 40px 0;
   }
   .footer a {
-    color: black;
+    color: white;
     text-decoration: none;
   }
   .footer a:hover {
     color: #adb5bd;
   }
   .social-icons{
-    color: black;
+    color: white;
   }
   .social-icons a {
     margin: 0 10px;
-    color: black;
+    color: white;
     font-size: 20px;
   }
   .social-icons a:hover {
-    color: white;
+    color: rgb(138, 132, 132);
   }
