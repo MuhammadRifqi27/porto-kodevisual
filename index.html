@@ -233,23 +233,31 @@
           <div class="col-lg text-center">
             <h1 style="font-weight: bold;">Contact Me</h1>
           </div>
-          <form class="d-flex flex-column">
+          <form id="contactForm" class="d-flex flex-column" method="post" action="conn.php">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Nomor WA</label>
+              <input type="text" class="form-control" name="number" id="number" placeholder="Enter your whatsapp number">
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter the subject (ex: Foto Wisuda)">
             </div>
             <div class="mb-3">
+              <label for="jam" class="form-label">Jam</label>
+              <input type="time" class="form-control" name="time" id="jam" placeholder="Booking jam berapa (note: jika jam bentrok akan dihubungi via WA)">
+            </div>
+            <!-- <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-            </div>
+            </div> -->
             <button type="submit" class="btn btn-primary mt-auto">Submit</button>
           </form>
         </div>
@@ -285,5 +293,36 @@
 <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          // Create a FormData object
+          const formData = new FormData(this);
+      
+          // Send the form data using fetch
+          fetch('conn.php', {
+              method: 'POST',
+              body: formData,
+          })
+          .then(response => response.json())
+          .then(data => {
+              // Show notification based on response
+              if (data.status === 'success') {
+                  alert(data.message); // Show success message
+                  // Optionally, you could reset the form
+                  this.reset();
+              } else {
+                  alert("Error: " + data.message); // Show error message
+              }
+          })
+          .catch(error => {
+              console.error('Error:', error);
+              alert("An error occurred. Please try again.");
+          });
+      });
+      </script>
   </body>
 </html>
