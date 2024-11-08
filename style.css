@@ -3,7 +3,7 @@ body {
     background-color: white;
 }
 section {
-    padding-top: 25rem;
+    padding-top: 7rem;
 }
 .jumbotron{
     padding-top: 15rem;
@@ -18,7 +18,8 @@ section {
     color: white;
 }
 #tentang {
-  background-color: #081300;
+  background-color: #020927;
+  color: white;
 }
 
 #layanan i {
@@ -26,7 +27,7 @@ section {
 }
 
 #layanan {
-  background-color: #081300;
+  background-color: #020927;
 }
 .row-card {
   margin-bottom: 20rem;
@@ -48,7 +49,7 @@ section {
   border: none;
   border-radius: 15px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  color: #081300;
+  color: #020927;
   height: auto; /* Ensures the card adjusts its height based on content */
   min-height: 620px;
   
@@ -106,7 +107,7 @@ section {
   border: none;
   border-radius: 15px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  color: #081300;
+  color: #020927;
   height: auto; /* Ensures the card adjusts its height based on content */
   min-height: 620px;
   
@@ -196,7 +197,7 @@ section {
 }
 /* form */
 .contact-form {
-  background-color: #081300;
+  background-color: #020927;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -232,7 +233,7 @@ section {
 
   /* footer */
   .footer {
-    background-color: #081300;
+    background-color: #020927;
     color: black;
     padding: 40px 0;
   }
