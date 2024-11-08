@@ -4,20 +4,314 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/white.png">
+    <link rel="shortcut icon" href="img/Kreasi Rasa White PNG.png">
 
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"> 
-    
-    <title>Kode Visual</title>
+    <link rel="stylesheet" href="/style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      body {
+    font-family: sans-serif;
+    background-color: white;
+    }
+    section {
+        padding-top: 8rem;
+    }
+    .jumbotron{
+        padding-top: 10rem;
+        padding-bottom: 14rem;
+        
+    }
+    .jumbotron img{
+        margin-top: 2rem;
+    }
+    .display-6{
+        margin-top: 1rem;
+        color: white;
+    }
+    #tentang {
+      background-color: #081300;
+      color: white;
+    }
+
+    #layanan i {
+      font-size: 5rem;
+    }
+
+    #layanan {
+      background-color: #081300;
+    }
+    .row-card {
+      margin-bottom: 20rem;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+    .card-body {
+        height: 18rem;
+    }
+
+
+    /* Card Layanan */
+    .custom-cardd {
+      background-color: #7c8bce;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+      color: #081300;
+      height: auto; /* Ensures the card adjusts its height based on content */
+      min-height: 620px;
+      
+    }
+    /* For screens larger than 576px */
+    /* hp */
+    @media (min-width: 350px) {
+      .custom-cardd{
+        min-height: 850px;
+      }
+    }
+    @media (min-width: 400px) {
+      .custom-cardd{
+        min-height: 830px;
+      }
+    }
+    @media (min-width: 420px) {
+      .custom-cardd{
+        min-height: 780px;
+      }
+    }
+    @media (min-width: 500px) {
+      .custom-cardd{
+        min-height: 700px;
+      }
+    }
+    @media (min-width: 550px) {
+      .custom-cardd{
+        min-height: 630px;
+      }
+    }
+    @media (min-width: 576px) {
+      .custom-cardd{
+        min-height: 650px;
+      }
+    }
+    @media (min-width: 768px) {
+      .custom-cardd{
+        min-height: 850px;
+      }
+    }
+    @media (min-width: 992px) {
+      .custom-cardd{
+        min-height: 730px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .custom-cardd{
+        min-height: 630px;
+      }
+    }
+    .custom-card {
+      background-color: #7c8bce;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+      color: #081300;
+      height: auto; /* Ensures the card adjusts its height based on content */
+      min-height: 620px;
+      
+    }
+    /* For screens larger than 576px */
+    @media (min-width: 350px) {
+      .custom-card{
+        min-height: 1020px;
+      }
+    }
+    @media (min-width: 400px) {
+      .custom-card{
+        min-height: 950px;
+      }
+    }
+    @media (min-width: 420px) {
+      .custom-card{
+        min-height: 880px;
+      }
+    }
+    @media (min-width: 450px) {
+      .custom-card{
+        min-height: 750px;
+      }
+    }
+    @media (min-width: 500px) {
+      .custom-card{
+        min-height: 750px;
+      }
+    }
+    @media (min-width: 576px) {
+      .custom-card{
+        min-height: 760px;
+      }
+    }
+    @media (min-width: 768px) {
+      .custom-card{
+        min-height: 1050px;
+      }
+    }
+    @media (min-width: 992px) {
+      .custom-card{
+        min-height: 750px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .custom-card{
+        min-height: 750px;
+      }
+    }
+    @media (min-width: 1400px) {
+      .custom-card{
+        min-height: 650px;
+      }
+    }
+    .custom-card-title {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      color: #311b92;
+    }
+
+    .custom-list-item {
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .custom-list-item .fw-bold {
+      color: #020927;
+    }
+
+    .custom-badge {
+      background-color: #ab47bc;
+      color: white;
+    }
+
+    .custom-card-text {
+      font-family: 'Verdana', sans-serif;
+      font-size: 14px;
+      color: #6a1b9a;
+    }
+
+    #Hubungi {
+      color: white;
+    }
+    /* form */
+    .contact-form {
+      background-color: #081300;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 50px auto;
+        margin-bottom: 8rem;
+      }
+      .contact-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .form-control {
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        box-shadow: none;
+      }
+      .form-control:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      .btn-primary:hover {
+        background-color: #0d28a0;
+        border-color: #020927;
+      }
+
+      /* footer */
+      .footer {
+        background-color: #081300;
+        color: white;
+        padding: 40px 0;
+      }
+      .footer a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        color: #adb5bd;
+      }
+      .social-icons{
+        color: white;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        color: white;
+        font-size: 20px;
+      }
+      .social-icons a:hover {
+        color: rgb(138, 132, 132);
+      }
+/* CSS untuk mengatur tautan menjadi center */
+.contact-form {
+    text-align: center;
+}
+.contact-form {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+    </style>
+    <title>Kreasi Rasa</title>
   </head>
   <body id="home">
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top" style="background-color: #020927;">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top" style="background-color: #081300;">
         <div class="container-fluid ms-5">
-            <img src="img/white.png" alt="" width="50">
-          <a class="navbar-brand ms-2" href="#">Kode Visual</a>
+            <img src="img/Kreasi Rasa White PNG.png" alt="" width="50">
+          <a class="navbar-brand ms-2" href="#">Kreasi Rasa</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,14 +320,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#layanan">Layanan</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portofolio">Portofolio</a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#tentang">Tentang</a>
+                <a class="nav-link" href="#tentang">Benefit</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Hubungi">Hubungi</a>
@@ -45,9 +339,9 @@
 
       <!--Jumbotron-->
       <section class="jumbotron text-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 0.5)), url(img/tugu.JPG) no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
-        <img src="img/white.png" alt="Muhammad Rifqi" width="200" class="rounded-circle">
-        <h4 class="display-6">Selamat datang di Kode Visual</h4>
+                       rgba(0, 0, 0, 0.5)), url(img/bg_jumbotron.jpg) no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+        <img src="img/Kreasi Rasa White PNG.png" alt="Muhammad Rifqi" width="200" class="rounded-circle">
+        <h4 class="display-6">Selamat datang di Kreasi Rasa</h4>
         <h3 class="display-1" style="color: white;">Hai! Hola!</h3>
         <a href="#layanan">
           <button class="btn btn-danger btn-lg">
@@ -57,7 +351,7 @@
       </section>
         <!--End Jumbotron-->
 
-        <!--Layanan-->
+        <!-- Layanan
         <section id="layanan">
           <div class="container text-center text-white">
             <div class="row">
@@ -82,145 +376,111 @@
               </div>
             </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,176C384,171,480,117,576,128C672,139,768,213,864,208C960,203,1056,117,1152,90.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,176C384,171,480,117,576,128C672,139,768,213,864,208C960,203,1056,117,1152,90.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
         </section>
-
-        <section id="portofolio">
-          <div class="container text-center">
-            <div class="row mb-5">
-              <div class="col-md">
-                  <h1 style="font-weight: bold; font-size: 5rem;">Portofolio</h1>
-                  <h3 style="font-weight: bold;">Untuk portofolio yang lebih banyak, silahkan follow akun sosial media kami</h3>
-              </div>
-          </div>
-          <div class="row justify-content-center fs-5 text-center mb-3">
-              <div class="col-md mb-3">
-                <figure class="figure">
-                  <img src="img/1.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
-                  <figcaption class="figure-caption" style="font-weight: bold;" >JLS JOGJA</figcaption>
-                </figure>
-              </div>
-              <div class="col-md mb-3">
-                <figure class="figure">
-                  <img src="img/2.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
-                  <figcaption class="figure-caption" style="font-weight: bold;">JLS JOGJA</figcaption>
-                </figure>
-              </div>
-              <div class="col-md mb-3">
-                <figure class="figure">
-                  <img src="img/3.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
-                  <figcaption class="figure-caption" style="font-weight: bold;">KOTA GEDE</figcaption>
-                </figure>
-              </div>
-          </div>
-          <div class="row justify-content-center fs-5 text-center">
+      <!---->
+      <!-- <section id="portofolio">
+        <div class="container text-center">
+          <div class="row mb-5">
+            <div class="col-md">
+                <h1 style="font-weight: bold; font-size: 5rem;">Portofolio</h1>
+                <h3 style="font-weight: bold;">Untuk portofolio yang lebih banyak, silahkan follow akun sosial media kami</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center mb-3">
             <div class="col-md mb-3">
               <figure class="figure">
-                <img src="img/4.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
-                <figcaption class="figure-caption" style="font-weight: bold;">KEDIRI</figcaption>
+                <img src="img/1.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
+                <figcaption class="figure-caption" style="font-weight: bold;" >JLS JOGJA</figcaption>
               </figure>
             </div>
             <div class="col-md mb-3">
               <figure class="figure">
-                <img src="img/5.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
-                <figcaption class="figure-caption" style="font-weight: bold;">TUGU JOGJA</figcaption>
-              </figure>
-            </div>
-            <div class="col-md mb-3">
-              <figure class="figure">
-                <img src="img/6.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
+                <img src="img/2.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
                 <figcaption class="figure-caption" style="font-weight: bold;">JLS JOGJA</figcaption>
               </figure>
             </div>
+            <div class="col-md mb-3">
+              <figure class="figure">
+                <img src="img/3.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
+                <figcaption class="figure-caption" style="font-weight: bold;">KOTA GEDE</figcaption>
+              </figure>
+            </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md mb-3">
+            <figure class="figure">
+              <img src="img/4.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
+              <figcaption class="figure-caption" style="font-weight: bold;">KEDIRI</figcaption>
+            </figure>
           </div>
+          <div class="col-md mb-3">
+            <figure class="figure">
+              <img src="img/5.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
+              <figcaption class="figure-caption" style="font-weight: bold;">TUGU JOGJA</figcaption>
+            </figure>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#020927" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,112C384,85,480,43,576,42.7C672,43,768,85,864,117.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </section>
-  
-      <!--END My Project-->
+          <div class="col-md mb-3">
+            <figure class="figure">
+              <img src="img/6.JPG" class="figure-img img-fluid rounded"  style="border: 3px solid #000;" alt="...">
+              <figcaption class="figure-caption" style="font-weight: bold;">JLS JOGJA</figcaption>
+            </figure>
+          </div>
+        </div>
+        </div>
+      </section> -->
+   
 
     <!--About-->
     <section id="tentang">
       <div class="container text-center">
           <div class="row mb-5">
               <div class="col-md">
-                  <h1 style="font-weight: bold;">Tentang Kami</h1>
+                  <h1 style="font-weight: bold;">BENEFIT</h1>
               </div>
           </div>
           <div class="row">
               <div class="col-md">
-                  <h3 >Selamat datang di Kode Visual!</h3>
-                  <p >Di Kode Visual, kami mengubah visi Anda menjadi karya visual yang menakjubkan. Tim profesional kreatif kami berdedikasi untuk menangkap momen berharga Anda, membuat video yang menarik, mendesain grafis yang memukau, dan mengelola kehadiran sosial media Anda dengan presisi dan kreativitas.</p>
+                  <h3>Selamat datang di Kreasi Rasa!</h3>
+                  <h4 style="font-weight: bold;">Rasa Asli, Kualitas Pasti</h4>
               </div>
           </div>
           <div class="row row-card justify-content-center fs-5 text-center">
               <div class="col-md text-start mt-5">
-                  <h3 style="font-weight: bold;">Layanan Kami :</h3><br>
-                  <div class="card custom-cardd">
-                      <div class="card-body">
-                          <ol class="list-group list-group-numbered">
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto">
-                                      <div class="fw-bold">Fotografi</div>
-                                      <p>Dari potret hingga acara, fotografer kami ahli dalam menangkap esensi setiap momen.</p>
-                                  </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto">
-                                      <div class="fw-bold">Videografi</div>
-                                      <p>Kami menciptakan video menarik yang menceritakan kisah Anda, baik untuk kenangan pribadi maupun promosi perusahaan.</p>
-                                  </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto">
-                                      <div class="fw-bold">Desain</div>
-                                      <p>Desainer berbakat kami mewujudkan ide Anda, menciptakan visual yang unik dan berkesan.</p>
-                                  </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto">
-                                      <div class="fw-bold">Pengelolaan Media Sosial</div>
-                                      <p>Kami membantu Anda membangun dan menjaga kehadiran online yang kuat, memastikan merek Anda menonjol di dunia digital.</p>
-                                  </div>
-                              </li>
-                          </ol>
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
+                      <div class="ms-2 me-auto">
+                          <div class="fw-bold">Free Ongkir</div>
+                          <p>Untuk jarak 0-6km</p>
                       </div>
-                  </div>
-              </div> <!-- Close first col-md -->
-              <div class="col-md text-start mt-5">
-                  <h4 style="font-weight: bold;">Mengapa Memilih Kode Visual?</h4><br>
-                  <div class="card custom-card">
-                      <div class="card-body">
-                          <ol class="list-group list-group-numbered">
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto mb-2">
-                                      <div class="fw-bold">Kualitas Profesional</div>
-                                      <p>Kami menggunakan teknologi dan teknik terbaru untuk memastikan kualitas tertinggi dalam semua pekerjaan kami.</p>
-                                  </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto mb-4">
-                                      <div class="fw-bold">Tim Kreatif</div>
-                                      <p>Tim kami penuh dengan semangat kreativitas dan berkomitmen untuk memberikan hasil yang luar biasa.</p>
-                                  </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto mb-4">
-                                      <div class="fw-bold">Pendekatan Berpusat pada Pelanggan</div>
-                                      <p>Kami bekerja sama dengan klien untuk memahami kebutuhan mereka dan melampaui ekspektasi mereka.</p>
-                                  </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
-                                  <div class="ms-2 me-auto mb-4">
-                                      <p>Biarkan Kode Visual menjadi mitra Anda untuk semua kebutuhan visual dan kreatif Anda. Bersama-sama, kita akan menciptakan sesuatu yang luar biasa!</p>
-                                  </div>
-                              </li>
-                          </ol>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
+                      <div class="ms-2 me-auto">
+                          <div class="fw-bold">Pelayanan Cepat</div>
+                          <p>Kami siap melayani kapan saja dengan senyuman</p>
                       </div>
-                  </div>
-              </div> <!-- Close second col-md -->
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
+                      <div class="ms-2 me-auto">
+                          <div class="fw-bold">Menu Bervariasi</div>
+                          <p>Beragam pilihan menu dan menyesuaikan keinginan costumer</p>
+                      </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
+                      <div class="ms-2 me-auto">
+                          <div class="fw-bold">Sehat & Higienis</div>
+                          <p>Masakan kami dibuat dari bahan segar dan halal</p>
+                      </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start custom-list-item">
+                      <div class="ms-2 me-auto">
+                          <div class="fw-bold">Fleksibel</div>
+                          <p>Menerima catering harian, bulanan, acara, dan lainnya</p>
+                      </div>
+                  </li>
+                </ol>
           </div>
-      </div><br><br>
+      </div><br>
   </section>
   
     <!--End About-->
@@ -233,33 +493,7 @@
           <div class="col-lg text-center">
             <h1 style="font-weight: bold;">Contact Me</h1>
           </div>
-          <form id="contactForm" class="d-flex flex-column" method="post" action="conn.php">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
-            </div>
-            <div class="mb-3">
-              <label for="number" class="form-label">Nomor WA</label>
-              <input type="text" class="form-control" name="number" id="number" placeholder="Enter your whatsapp number">
-            </div>
-            <div class="mb-3">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter the subject (ex: Foto Wisuda)">
-            </div>
-            <div class="mb-3">
-              <label for="jam" class="form-label">Jam</label>
-              <input type="time" class="form-control" name="time" id="jam" placeholder="Booking jam berapa (note: jika jam bentrok akan dihubungi via WA)">
-            </div>
-            <!-- <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-            </div> -->
-            <button type="submit" class="btn btn-primary mt-auto">Submit</button>
-          </form>
+          <a href="https://wa.me/+6285869147268" class="btn btn-primary">Click here to order</a>
         </div>
     </section>
 
@@ -271,21 +505,21 @@
             <div class="col-md">
               <h5>Contact Information</h5>
               <p><i class="bi bi-geo-alt-fill"></i> Yogyakarta, Indonesia</p>
-              <p><i class="bi bi-telephone-fill"></i>+62 89628169104</p>
-              <p><i class="bi bi-envelope-fill"></i> rifqizaki72@gmail.com</p>
+              <p><i class="bi bi-telephone-fill"></i>+62 85869147268</p>
+              <p><i class="bi bi-envelope-fill"></i> kreasirasa2024@gmail.com</p>
             </div>
             <div class="col-md text-end">
               <h5>Follow Us</h5>
               <div class="social-icons">
-                <a href="https://www.youtube.com/channel/UCwMr1AMRQ2EEmkJWXtT8A_A"><i class="bi bi-youtube"></i></a>
+                <!-- <a href="https://www.youtube.com/channel/UCwMr1AMRQ2EEmkJWXtT8A_A"><i class="bi bi-youtube"></i></a> -->
                 <a href="https://www.instagram.com/rifqiizaki/"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/kodevisual/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/+6289628169104"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@catering_kreasirasa"><i class="bi bi-tiktok"></i></a>
+                <a href="https://wa.me/+6285869147268"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
           </div>
           <div class="text-center mt-4">
-            <p>&copy; 2024 Kode Visual. All rights reserved.</p>
+            <p>&copy; 2024 Kreasi Rasa. Ready to serve your order</p>
           </div>
         </div>
       </footer>
