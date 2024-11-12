@@ -50,7 +50,7 @@ section {
   border-radius: 15px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
   color: #020927;
-  height: auto; /* Ensures the card adjusts its height based on content */
+  height: auto; 
   min-height: 620px;
   
 }
@@ -120,7 +120,7 @@ section {
   border-radius: 15px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
   color: #020927;
-  height: auto; /* Ensures the card adjusts its height based on content */
+  height: auto;
   min-height: 620px;
   
 }
